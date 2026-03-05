@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td,th{
@@ -19,8 +20,18 @@
             padding: 10px;
         }
 
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
+        }
+
+        thead >tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(100, 100, 100);
         }
 
         thead,tfoot{
