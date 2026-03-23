@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Features</title>
+    <style>
+        /*Gerais*/
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        html, body{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(3, 3, 180);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1{
+            color: white;
+            text-shadow: 3px 3px 0px blue;
+            padding: 10px;
+        }
+        
+        /*Retrato*/
+        @media screen and (orientation: portrait)
+        {
+            body{
+                background: url(/exercicios/ex026/imagens/cev-portrait.jpg);
+                background-position: center bottom;
+            }
+        }
+        
+        /*Paisagem*/
+        @media screen and (orientation: landscape)
+        {
+            body{
+                background: url(/exercicios/ex026/imagens/cev-landscape.jpg);
+                background-position: left bottom;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientacao do seu dispositivo</h1>
+</body>
+</html>
